@@ -1,0 +1,19 @@
+<%#
+
+  - Lists look like arrays
+  Lists are single-linked
+
+ %>
+
+  first_list = [1,2,3]
+  second_list = [:ok, 1, "test", [1,2,3]]
+  hd(first_list)
+  tl(first_list)
+  third_list = [1, | [2,3]]
+  fourth_list = [1 | [2 | [3 | []]]]
+  [:ok | first_list]
+  [a,b,c] = first_list
+  [head | tail] = first_list
+  options = [{:is_active, false}, {:notify_user, true}, {:create_if_not_exists, true}]
+  options[:notify_user]
+

@@ -1,0 +1,29 @@
+<%#
+
+  Tuples
+  - Ordered collection used for 2, 3, or 4 values
+  - Equal sign is a matching operator, not assigning it
+
+ %>
+
+  book - {"Programming Elixir", "Dave Thomas", 25.00}
+  {:ok, "line 1\nline 2\nline 3"}
+  elem(book, 2)
+    --> used 0 based value
+  put_elem(book, 2, 48.00)
+    --> changes value of 3rd element in book, creates a new tuple with the new value because Elixir is immutable
+  a = 1 + 1
+  book
+  author = elem(book, 1)
+  title = elem(book, 0)
+  {title1, author1, price1} = book
+  title1
+  {title2, author2} = book
+    --> gives an error
+  {title3, _, price3} = book
+    --> use underscore to ignore things you don't care about
+  _
+    --> Error because there is no value
+
+
+

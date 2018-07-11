@@ -1,0 +1,25 @@
+<%#
+
+  - UTF 8 encoded
+  <> = concat
+
+ %>
+
+:COMMANDS:
+  euro = "€"
+  byte_size(euro)
+  String.length(euro)
+  byte_size("$")
+  hello = "Hello, "
+  name = "Nate"
+  hello <> name
+  handle = "taylonr"
+  "My twitter handle is @#{handle}. Feel free to send me a message."
+  one = 1
+  "Test: #{one}"
+  numbers = [1, 2, 3]
+  "Test #{numbers}" -> this will return a sequence of numbers
+  euro <> <<0>> -> will return the bytes in euro
+
+
+

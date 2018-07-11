@@ -1,0 +1,20 @@
+<%#
+
+  Atom = constant where its name is also its value
+  - They are memory efficient
+  - They are used for booleans
+  - also used for nil
+
+ %>
+
+  :firstname
+  :"this is also an atom"
+  IO.puts(:"this is also an atom")
+
+  :ok -> is an atom built into elixir that lets the program know it got the value correctly
+  :error -> atom built into elixir that lets the program know an error happened
+
+
+
+
+

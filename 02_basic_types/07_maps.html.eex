@@ -1,0 +1,15 @@
+<%#
+  Collections of key: value pair
+  - Key doesn't have to be an atom
+  - More efficient
+ %>
+
+  my_map = %{1 => {"Nate", "Taylor", "taylorn@gmail.com"}, 2 => {"Charles", "Spurgeon", "charles.spurgeon@example.com"}}
+  other_map = %{:names => ["Nate Taylor", "Charles Spurgeon"], "gender" => "male"}
+  another_map = %{{:ok, 1} => true, {:ok, 2} => false}
+  other_map["gender"]
+  other_map.names
+    --> you can access atoms with the dot syntax
+  %{:names => names_list} = other_map
+  names_list
+

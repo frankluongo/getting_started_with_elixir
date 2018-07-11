@@ -1,0 +1,5 @@
+<%#
+
+  1_000_000_000 > still becomes an integer
+
+ %>

@@ -1,0 +1,14 @@
+<%#
+
+  Data is immutable, once created, data can't change
+  - Handles concurrency well
+  - Efficient Memory use
+
+ %>
+
+ languages = ["Elixir", "C#", "JavaScript"]
+ List.insert_at(languages, 0, "C++")
+
+ counter = 1
+ counter = counter + 1
+  --> Elixir rebinds the data to the variable
