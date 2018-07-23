@@ -5,5 +5,6 @@ defmodule PluralsightTweet.FileReader do
     |> Enum.map(&String.trim/1) # Trim the white space at the beginning and end of each element that was split
     |> Enum.filter(&String.length(&1) <= 140) # make sure string is less than 140 characters
     # |> Enum.filter(fn str -> String.length(str) <= 140)
+    |> Enum.random()
   end
 end
