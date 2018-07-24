@@ -4,7 +4,7 @@ defmodule PluralsightTweet.TweetServer do
 
   def start_link() do
     # Hard Code the name of the server
-    GenServer.start_link(__MODULE__, :ok, name: :tweet_server)
+    GenServer.start_link(__MODULE__, :ok, name: :tweet_server) # It's better to do this than to have to get the PID
   end
 
   def init(:ok) do
@@ -14,7 +14,7 @@ defmodule PluralsightTweet.TweetServer do
   def handle_cast({:tweet, tweet}, _) do
     PluralsightTweet.Tweet.send(tweet)
     {:noreply, %{}}
-  end
+  end # could use handleCall, which is synchronous
 
   def tweet(tweet) do
     GenServer.cast(:tweet_server, {:tweet, tweet})
